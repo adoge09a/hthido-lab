@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简明指南 · 华体会</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f2f4f8;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            color: #1a1d23;
+            line-height: 1.65;
+        }
+
+        .hero {
+            background: linear-gradient(145deg, #0b0e17 0%, #151e2e 80%, #1c283b 100%);
+            padding: 5rem 1.8rem 4.2rem;
+            text-align: center;
+            color: #e6edf5;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: -40%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(56, 139, 253, 0.09) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 500;
+            letter-spacing: 2px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(135deg, #9fc5ff, #7aa9fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 600;
+        }
+
+        .hero .sub {
+            margin-top: 1.2rem;
+            font-size: 1.15rem;
+            opacity: 0.8;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 2;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 1.5rem;
+            font-weight: 300;
+        }
+
+        .content-wrap {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 2.8rem 2rem 3.8rem;
+        }
+
+        .intro-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 2.2rem;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 2rem 2.4rem;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.02), 0 1px 4px rgba(0, 0, 0, 0.04);
+            transition: 0.2s ease;
+        }
+
+        .card h2 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            color: #141a27;
+            letter-spacing: -0.01em;
+            border-left: 4px solid #3b7cff;
+            padding-left: 1rem;
+        }
+
+        .card p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: #2b303b;
+        }
+
+        .card p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .highlight-link {
+            color: #1a5edb;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s, color 0.15s;
+        }
+
+        .highlight-link:hover {
+            color: #0e44b0;
+            border-bottom: 1px solid #1a5edb;
+        }
+
+        .faq-mini {
+            background: #f0f3fc;
+            border-radius: 20px;
+            padding: 1.6rem 2rem;
+            margin-top: 2rem;
+            border: 1px solid #dee6f2;
+        }
+
+        .faq-mini h3 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #0f1a2e;
+            margin-bottom: 1rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1rem;
+        }
+
+        .faq-item strong {
+            display: block;
+            font-weight: 600;
+            color: #1f2a41;
+            margin-bottom: 0.2rem;
+        }
+
+        .faq-item p {
+            margin: 0;
+            font-size: 0.96rem;
+            color: #2c3442;
+        }
+
+        .foot-note {
+            margin-top: 3.2rem;
+            padding: 1.8rem 2rem;
+            background: #e9ecf3;
+            border-radius: 40px 20px 20px 20px;
+            text-align: center;
+            font-size: 1rem;
+            color: #1e2537;
+        }
+
+        .foot-note a {
+            color: #1a5edb;
+            font-weight: 500;
+            text-decoration: none;
+            border-bottom: 1px dotted #1a5edb;
+        }
+
+        .foot-note a:hover {
+            border-bottom: 1px solid;
+        }
+
+        .foot-note .small-meta {
+            display: block;
+            margin-top: 0.6rem;
+            font-size: 0.85rem;
+            color: #535f77;
+        }
+
+        @media (max-width: 640px) {
+            .hero h1 {
+                font-size: 2.1rem;
+            }
+            .card {
+                padding: 1.6rem 1.4rem;
+            }
+            .content-wrap {
+                padding: 1.8rem 1rem 2.8rem;
+            }
+            .faq-mini {
+                padding: 1.2rem 1.2rem;
+            }
+            .hero {
+                padding: 3.4rem 1.2rem 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>关于 <span>华体会</span> 的简明指南</h1>
+        <div class="sub">从使用背景、实用场景到常见疑问——一份偏向知识型的快速参考</div>
+    </section>
+
+    <div class="content-wrap">
+        <div class="intro-cards">
+
+            <div class="card">
+                <h2>平台背景与定位</h2>
+                <p>在数字体验趋于多元的当下，理解一个服务平台的定位能够帮助用户更有效地利用其功能。<a class="highlight-link" href="https://hthido.com.cn">华体会</a> 并不是一个简单的工具页面，而是围绕特定内容与整合需求搭建的信息节点。从结构上看，它倾向为访问者提供集中化的入口与说明，减少在多个页面之间跳转的负担。</p>
+                <p>许多用户初次接触时，会关注其背后是否具备稳定的维护与更新。从已有的交互反馈来看，该平台在信息组织上保持相对清晰的层级，并预留了扩展空间。无论你是出于了解还是实际使用，提前把握整体框架都能让后续操作更顺畅。</p>
+            </div>
+
+            <div class="card">
+                <h2>常见使用场景</h2>
+                <p>根据不同用户的反馈，<strong>华体会</strong> 适用的场景大致可以归纳为三类：第一，资讯查阅——当需要快速了解某一主题的整合介绍时，平台提供的内容卡片与分类能节省大量筛选时间。第二，功能引导——对于一些需要按步骤完成的操作，站点内置的说明段落相当于一份静态指引。第三，补充参考——如果你已经在使用其他关联服务，这里的说明可能包含必要的对接提示或条件说明。</p>
+                <p>需要留意的是，不同网络环境或设备下，页面渲染可能存在细微差异，建议在主流浏览器中访问以获得较完整的版式效果。</p>
+            </div>
+
+            <div class="card">
+                <h2>访问提醒与建议</h2>
+                <p>为保证访问体验，推荐在稳定连接下直接通过浏览器打开。如果你遇到页面加载缓慢或布局偏移，可以先尝试清理缓存或切换至较新版本的浏览器。部分安全软件可能对站内链接有额外过滤，如遇拦截可检查防护设置。</p>
+                <p>另外，建议将 <a class="highlight-link" href="https://hthido.com.cn">华体会</a> 添加至书签栏，以便后续快速返回。平台目前没有复杂的注册流程，绝大多数内容对访客直接开放，无需额外凭证。</p>
+            </div>
+
+            <div class="faq-mini">
+                <h3>常见疑问摘要</h3>
+                <div class="faq-item">
+                    <strong>站点是否支持移动端？</strong>
+                    <p>页面已采用响应式设计，在手机与平板设备上会自动适配布局。部分交互元素（如悬停效果）在触屏设备上会以点击态呈现，不影响功能。</p>
+                </div>
+                <div class="faq-item">
+                    <strong>内容多久更新一次？</strong>
+                    <p>目前没有固定更新周期，但信息板块会随平台需求进行补充或修订。如果你发现过时内容，可以尝试通过站内联系方式反馈。</p>
+                </div>
+                <div class="faq-item">
+                    <strong>是否会有外部链接跳转？</strong>
+                    <p>部分说明段落中会包含指向相关说明页的链接，但所有跳转均保持在同一域名体系下，不涉及第三方广告页面。</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="foot-note">
+            <span>如需直接访问主页面，可点击 </span><a href="https://hthido.com.cn">华体会</a><span> 进入浏览。</span>
+            <span class="small-meta">基于公开信息整理 · 2025</span>
+        </div>
+    </div>
+
+</body>
+</html>
